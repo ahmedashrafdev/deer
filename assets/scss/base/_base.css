@@ -12,7 +12,7 @@
 }
 
 *::selection {
-  background-color: rgba(201, 5, 6, 0.7);
+  background-color: var(--primary-color-bg);
   color: #fff;
 }
 
