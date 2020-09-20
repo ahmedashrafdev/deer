@@ -1,0 +1,95 @@
+html {
+    direction: rtl;
+
+    & body {
+        & .about__info .btn-text svg {
+            transform: rotate(180deg) scale(0.7);
+        }
+
+        & span#prev, span#next {
+            font-weight: bold !important;
+        }
+
+        & span#prev {
+            left: auto !important;
+            right: -4rem !important;
+        }
+
+        & span#next {
+            right: auto !important;
+            left: -4rem !important;
+        }
+
+        & .slidecontroller {
+            & span#prev {
+                right: 0 !important;
+            }
+
+            & span#next {
+                left: 0 !important;
+            }
+        }
+
+        & .slides {
+            direction: ltr !important;
+        }
+
+        & .contacts__item .phone-icon {
+            transform: rotate(250deg) scale(0.5) !important;
+        }
+
+        & .vline.bottom {
+            left: 20px;
+            right: auto;
+        }
+
+        & .vline.top {
+            right: 20px;
+        }
+
+        & .about__p .content__wrap {
+            right: -100px !important;
+            left: auto;
+
+            @media screen and (max-width: 776px) {
+                position: relative;
+                top: 0 !important;
+                right: 0 !important;
+                margin-top: 6rem;
+            }
+        }
+
+        & .contact__map div {
+            left: 0 !important;
+            right: auto !important;
+        }
+
+        & .contact__contacts--wrapper .phone-icon {
+            margin-top: 27px !important;
+            transform: scale(1.65) rotate(260deg) !important;
+        }
+
+        & .nav__link {
+            letter-spacing: 0 !important;
+        }
+
+        & .burger span {
+            display: none;
+        }
+
+        & .release__content .author {
+            direction: rtl !important;
+            text-align: right !important;
+            display: block !important;
+        }
+
+        & .release__content {
+            direction: rtl !important;
+        }
+
+        & .search-box__icon {
+            left: 0;
+            right: auto;
+        }
+    }
+}

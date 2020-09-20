@@ -1,0 +1,6 @@
+.animated {
+  visibility: hidden;
+}
+.animated.active {
+  visibility: visible;
+}

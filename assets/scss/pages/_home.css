@@ -1,0 +1,304 @@
+.about__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 'content images';
+}
+
+@media screen and (max-width: 768px) {
+  .about__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 'images' 'content';
+  }
+}
+
+.about__info {
+  padding-inline-end: 4rem;
+}
+
+.about__info .btn-text svg {
+  transform: rotate(180deg) scale(0.7);
+}
+
+.left {
+  grid-area: content;
+}
+
+.left h4 {
+  margin-bottom: 2rem;
+}
+
+.left p {
+  margin-bottom: 2.5rem;
+}
+
+.left p.special {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.right {
+  grid-area: images;
+}
+
+@media screen and (max-width: 768px) {
+  .right {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.book {
+  padding: 0 2rem;
+}
+
+.main-slider {
+  margin-top: -8rem;
+  z-index: 0;
+}
+
+header .container {
+  z-index: 10;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+.composition {
+  position: relative;
+}
+
+.composition__image {
+  width: 55%;
+  height: 21.2rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  position: absolute;
+  transition: all .2s;
+  outline-offset: 2rem;
+}
+
+.composition__image--1 {
+  left: 0;
+  top: -2rem;
+}
+
+.composition__image--2 {
+  right: 0;
+  top: 2rem;
+}
+
+.composition__image--3 {
+  left: 20%;
+  top: 10rem;
+}
+
+.composition__image:hover {
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  outline: 1.5rem solid var(--primary);
+}
+
+.composition:hover .composition__image:not(:hover) {
+  transform: scale(0.9);
+}
+
+#prize {
+  background: url(http://arabic.esolve-eg.com/design/images/register/bg-register.png) right bottom no-repeat;
+  position: relative;
+  padding: 100px 0 130px;
+}
+
+@media screen and (max-width: 768px) {
+  #prize {
+    background-color: #A1BBD4;
+    background-image: none;
+  }
+}
+
+.prize__content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "tabs form";
+}
+
+@media screen and (max-width: 768px) {
+  .prize__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "tabs" "form";
+  }
+}
+
+.prize__tabs {
+  grid-area: tabs;
+}
+
+.prize__tabs--content-paragraph div {
+  width: 80%;
+}
+
+@media screen and (max-width: 940px) {
+  .prize__tabs--content-paragraph div {
+    width: 80%;
+  }
+}
+
+.prize__tabs--content-paragraph div img {
+  width: 100%;
+  height: auto;
+}
+
+.prize__tabs--content-paragraph p {
+  font-size: var(--font-size);
+  color: #fff;
+  padding-inline-end: 4rem;
+  margin: 3.5rem 0;
+}
+
+.prize__tabs--content-paragraph h6 {
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.prize__tabs--content-paragraph h6 a {
+  color: #fff;
+  transition: all .3s;
+}
+
+.prize__tabs--content-paragraph h6:hover a {
+  color: var(--primary);
+}
+
+.prize__tabs--btns {
+  display: flex;
+}
+
+.prize__tabs--btns li {
+  border-right: 1px solid rgba(255, 255, 255, 0.14);
+  color: var(--text-color);
+  background: #fff;
+  box-shadow: 6px 18px 50px 13px rgba(0, 0, 0, 0.25);
+  padding: 1rem 3rem;
+  font-size: var(--font-size);
+  cursor: pointer;
+}
+
+.prize__tabs--btns li:not(:last-child) {
+  margin-inline-end: 1rem;
+}
+
+.prize__tabs--btns li span {
+  font-weight: 700;
+  transition: all .3s;
+}
+
+.prize__tabs--btns li:hover {
+  color: var(--primary);
+}
+
+.prize__tabs--btns li:hover span {
+  color: var(--primary);
+}
+
+.prize__form {
+  grid-area: form;
+}
+
+.prize__form--heading {
+  color: #fff;
+  padding: 4.4rem 2rem;
+  background: #A2BAD4;
+}
+
+.prize__form--heading h4 {
+  margin-bottom: 11px;
+  color: #fff;
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+.prize__form--form {
+  padding: 42px 36px 50px 38px;
+  background: #fff;
+  box-shadow: 20px 21px 60px -8px rgba(0, 0, 0, 0.35);
+}
+
+.prize__form--form div {
+  margin-bottom: 30px;
+}
+
+.prize__form--form div input {
+  background: #fff;
+  font-size: 12px;
+  position: relative;
+  display: block;
+  width: 100%;
+  line-height: 24px;
+  padding: 0 19px;
+  color: #c2c2c2;
+  border: 1px solid rgba(25, 40, 54, 0.07);
+  height: 46px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+#news {
+  background: url(http://arabic.esolve-eg.com/design/images/instructors/bg-instructors.png) top right no-repeat;
+  position: relative;
+  padding: 100px 0 130px;
+}
+
+@media screen and (max-width: 768px) {
+  #news {
+    background-color: #F7BFAB;
+    background-image: none;
+  }
+}
+
+.news__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+
+@media screen and (max-width: 940px) {
+  .news__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .news__content {
+    grid-template-columns: 1fr;
+  }
+}
+
+#releases {
+  background-color: var(--grey-bg);
+}
+
+#testemonials {
+  background-color: var(--grey-bg);
+}
+
+.authors__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+
+@media screen and (max-width: 940px) {
+  .authors__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .authors__content {
+    grid-template-columns: 1fr;
+  }
+}

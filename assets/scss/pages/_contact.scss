@@ -1,0 +1,150 @@
+.contact {
+    margin: 7rem 0;
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr auto;
+        grid-template-areas: "main map" "contacts contacts";
+
+        @media screen and (max-width: 940px) {
+            grid-template-areas: "contacts" "main" "map";
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+        }
+    }
+
+    &__main {
+        grid-area: main;
+    }
+
+    &__typography {
+        margin-bottom: 3rem;
+
+        & h3 {
+            color: #000;
+            font-size: 3rem;
+            font-weight: 700;
+            position: relative;
+
+            &::after {
+                content: " ";
+                width: 7rem;
+                height: .3rem;
+                background-color: var(--primary);
+                position: absolute;
+                left: 0;
+                bottom: -1rem;
+            }
+        }
+
+        & span {
+            color: var(--grey-text-color);
+            font-size: 1.2rem;
+        }
+    }
+
+    &__map {
+        grid-area: map;
+        margin-inline-start: 5rem;
+
+        @media screen and (max-width: 940px) {
+            height: 50rem;
+        }
+
+        position: relative;
+
+        & iframe {
+            width: 87%;
+            height: 95%;
+
+            @media screen and (max-width: 940px) {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 50rem;
+                margin-inline-start: -80px;
+                margin-top: 5rem;
+            }
+
+            @media screen and (max-width: 640px) {
+                margin-inline-start: -40px;
+            }
+        }
+
+        & div {
+            position: absolute;
+            width: 14rem;
+            height: 30rem;
+            background-color: var(--primary);
+            top: -5rem;
+            right: 0;
+            z-index: -1;
+
+            @media screen and (max-width: 940px) {
+                display: none;
+            }
+        }
+    }
+
+    &__contacts {
+        display: grid;
+        grid-area: contacts;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 2rem;
+        padding-top: 2rem;
+
+        @media screen and (max-width: 940px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 7rem;
+            margin-bottom: 5rem;
+        }
+
+        @media screen and (max-width: 490px) {
+            grid-template-columns: 1fr;
+            grid-gap: 10rem;
+        }
+
+        &--item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (max-width: 940px) {
+                justify-content: flex-start;
+                margin-inline-start: 3rem;
+            }
+        }
+
+        &--wrapper {
+            display: flex;
+            align-items: center;
+
+            & svg {
+                margin-bottom: 3rem;
+                margin-top: 2rem;
+                margin-inline-end: 2rem !important;
+                fill: var(--primary);
+                transform: scale(1.65);
+            }
+
+            & .address, & .phone, & .email {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                & .key {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: #000;
+                }
+
+                & .value {
+                    font-size: var(--font-size);
+                    color: var(--grey-text-color);
+                }
+            }
+        }
+    }
+}

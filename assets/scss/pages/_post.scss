@@ -1,0 +1,56 @@
+.post {
+    &__wrapper {
+        margin: 7rem  0;
+    }
+
+    &__img {
+        & .img-box {
+            width: 100%;
+
+            & img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__title {
+        & h2 {
+            font-size: 2rem;
+            text-transform: capitalize;
+            margin: 2rem 0;
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: -1rem;
+
+        & div {
+            display: flex;
+            align-items: center;
+
+            & span {
+                margin-left: -3px;
+            }
+        }
+
+        & svg {
+            transform: scale(0.5);
+        }
+
+        &__icon {
+            transform: scale(0.6);
+        }
+
+        & span {
+            font-size: 1.4rem;
+            text-transform: capitalize;
+
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
+    }
+}

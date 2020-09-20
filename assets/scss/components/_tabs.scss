@@ -1,0 +1,89 @@
+@keyframes bottom-to-top {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.prize {
+    &__tabs {
+        grid-area: tabs;
+
+        &--content {
+            animation: bottom-to-top 0.3s;
+            display: none;
+
+            &.active {
+                display: block;
+            }
+
+            &-paragraph {
+                & p {
+                    font-size: var(--font-size);
+                    color: #fff;
+                    padding-right: 4rem;
+                    margin: 3.5rem 0;
+                }
+
+                & h6 {
+                    margin-bottom: 2.5rem;
+                    text-transform: uppercase;
+                    font-size: 2rem;
+
+                    & a {
+                        color: #fff;
+                        transition: all .3s;
+                    }
+
+                    &:hover {
+                        & a {
+                            color: var(--primary);
+                        }
+                    }
+                }
+            }
+        }
+
+        &--btns {
+            display: flex;
+
+            & li {
+                border-right: 1px solid rgba(255, 255, 255, 0.14);
+                color: var(--text-color);
+                background: #fff;
+                box-shadow: 6px 18px 50px 13px rgba(0, 0, 0, 0.25);
+                padding: 1rem 3rem;
+                font-size: var(--font-size);
+                cursor: pointer;
+
+                &:not(:last-child) {
+                    margin-right: 1rem;
+                }
+
+                & span {
+                    font-weight: 700;
+                    transition: all .3s;
+                }
+
+                &.active {
+                    color: var(--primary);
+
+                    & span {
+                        color: var(--primary);
+                    }
+                }
+
+                &:hover {
+                    color: var(--primary);
+
+                    & span {
+                        color: var(--primary);
+                    }
+                }
+            }
+        }
+    }
+}

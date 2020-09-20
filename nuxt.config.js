@@ -1,3 +1,5 @@
+// import path from 'path'
+import i18n from './config/i18n'
 export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
@@ -14,10 +16,15 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [],
+  css: ['@/assets/scss/app.min.css'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [],
+  plugins: [
+    {
+      src: '~/plugins/directives.js',
+      ssr: false,
+    },
+  ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -28,8 +35,56 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
+
+    '@nuxtjs/svg',
+    [
+      'nuxt-i18n',
+      // eslint-disable-next-line no-undef
+
+      {
+        defaultLocale: 'ar',
+        seo: false,
+        vueI18nLoader: true,
+        strategy: 'no_prefix',
+        routesNameSeparator: '_',
+        locales: [
+          {
+            code: 'en',
+            name: 'English',
+            iso: 'en',
+          },
+          {
+            code: 'ar',
+            name: 'Aabic',
+            iso: 'ar',
+          },
+        ],
+        vueI18n: i18n,
+        vuex: {
+          // Module namespace
+          moduleName: 'i18n',
+
+          // If enabled, current app's locale is synced with nuxt-i18n store module
+          syncLocale: true,
+
+          // If enabled, current translation messages are synced with nuxt-i18n store module
+          syncMessages: false,
+
+          // Mutation to commit to set route parameters translations
+          syncRouteParams: false,
+        },
+        beforeLanguageSwitch: (oldLocale, newLocale) => {
+          console.log('before')
+        },
+        onLanguageSwitched: (oldLocale, newLocale) => {
+          // store.commit('configration.toggleLang')
+          console.log('after')
+          // if (newLocale === 'ar') {
+          //   document.classList.add('rtl')
+          // }
+        },
+      },
+    ],
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)

@@ -1,0 +1,67 @@
+.author {
+    border: 1px solid #e6f3ff;
+
+    &__imagebox {
+        overflow: hidden;
+        position: relative;
+
+        & a {
+            & img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__details {
+        padding: 2.6rem 2.9rem 1.6rem 2.9rem;
+        background: #fff;
+    }
+
+    &__name {
+        margin-bottom: .9rem;
+        font-size: 2rem;
+        line-height: 2.4rem;
+
+        & a {
+            color: var(--text-color);
+            transition: all .3s;
+
+            &:hover {
+                color: var(--primary);
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+    }
+
+    &__description {
+        line-height: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    & .icons {
+        border-top: 1px solid #e6f3ff;
+
+        &__list {
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+
+            & li {
+                &:not(:last-child) {
+                    // margin-right: 1rem;
+               
+                }
+
+                & a {
+                    & svg {
+                        transform: scale(0.6);
+                    }
+                }
+            }
+        }
+    }
+}
