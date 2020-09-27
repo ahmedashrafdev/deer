@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 const state = {
-  authors: [
+  featured: [
     {
       name: 'mai ahmed',
       title: 'Economist',
@@ -42,7 +42,7 @@ const state = {
 const mutations = {}
 const actions = {}
 const getters = {
-  authors: (state) => state.authors,
+  featured: (state) => state.featured,
 }
 export default {
   namespaced: true,

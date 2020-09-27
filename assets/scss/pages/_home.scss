@@ -74,20 +74,24 @@ section {
         position: absolute;
         transition: all .2s;
         outline-offset: 2rem;
+        right: 0;
+        top: 2rem;
 
-        &--1 {
+        &:first-child {
             left: 0;
             top: -2rem;
+            right: auto;
         }
 
-        &--2 {
-            right: 0;
-            top: 2rem;
-        }
-
-        &--3 {
+        &:last-child {
             left: 20%;
             top: 10rem;
+            right: auto;
+        }
+
+        & img {
+            width: 100%;
+            height: 100%;
         }
 
         &:hover {
@@ -105,12 +109,12 @@ section {
 
 //prize section
 #prize {
-    background: url(http://arabic.esolve-eg.com/design/images/register/bg-register.png) right bottom no-repeat;
+    background: url(http://tawbahinstitute.com/design/images/instructors/bg-instructors.png) top right no-repeat;
     position: relative;
     padding: 100px 0 130px;
+    background-color: #F7BFAB;
 
     @media screen and (max-width: 768px) {
-        background-color: #A1BBD4;
         background-image: none;
     }
 }
@@ -120,6 +124,7 @@ section {
         display: grid;
         grid-template-columns: 60% 40%;
         grid-template-areas: "tabs form";
+        grid-gap: 5rem;
 
         @media screen and (max-width: 768px) {
             grid-template-columns: 1fr;
@@ -210,7 +215,7 @@ section {
         &--heading {
             color: #fff;
             padding: 4.4rem 2rem;
-            background: #A2BAD4;
+            background-color: #D99278;
 
             & h4 {
                 margin-bottom: 11px;
@@ -282,6 +287,17 @@ section {
     background-color: var(--grey-bg);
 }
 
+// #authors {
+//     // background: url(http://tawbahinstitute.com/design/images/instructors/bg-instructors.png) top right no-repeat;
+//     // position: relative;
+//     // padding: 100px 0 130px;
+//     // background-color: #F7BFAB;
+
+//     // @media screen and (max-width: 768px) {
+//     //     background-image: none;
+//     // }
+// }
+
 .authors__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -312,4 +328,66 @@ section {
     // @media screen AND (max-width :940px ){
     //     margin-left : 2.2rem;
     // }
+}
+
+.controllers {
+    display: flex;
+
+    & > div:not(:last-child) {
+        margin-left: 10px;
+    }
+}
+
+.btnrounded {
+    background: #fff;
+    position: relative;
+    padding: 0 25px;
+    border: 1px solid var(--grey-border);
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    line-height: 38px;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.btncircle {
+    background: #fff;
+    position: relative;
+    border: 1px solid var(--grey-border);
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    width: 38px;
+    height: 38px;
+
+    & svg {
+        transition: all 300ms ease-in-out;
+        transform: scale(0.4);
+    }
+
+    &:hover {
+        & svg {
+            color: #fff;
+        }
+    }
+}
+
+.prev .btncircle {
+    transform: rotate(180deg);
+}
+
+.btnrounded:hover,
+.btncircle:hover {
+    background-color: var(--primary);
 }

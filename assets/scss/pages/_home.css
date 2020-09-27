@@ -77,21 +77,25 @@ section {
   position: absolute;
   transition: all .2s;
   outline-offset: 2rem;
-}
-
-.composition__image--1 {
-  left: 0;
-  top: -2rem;
-}
-
-.composition__image--2 {
   right: 0;
   top: 2rem;
 }
 
-.composition__image--3 {
+.composition__image:first-child {
+  left: 0;
+  top: -2rem;
+  right: auto;
+}
+
+.composition__image:last-child {
   left: 20%;
   top: 10rem;
+  right: auto;
+}
+
+.composition__image img {
+  width: 100%;
+  height: 100%;
 }
 
 .composition__image:hover {
@@ -106,14 +110,14 @@ section {
 }
 
 #prize {
-  background: url(http://arabic.esolve-eg.com/design/images/register/bg-register.png) right bottom no-repeat;
+  background: url(http://tawbahinstitute.com/design/images/instructors/bg-instructors.png) top right no-repeat;
   position: relative;
   padding: 100px 0 130px;
+  background-color: #F7BFAB;
 }
 
 @media screen and (max-width: 768px) {
   #prize {
-    background-color: #A1BBD4;
     background-image: none;
   }
 }
@@ -122,6 +126,7 @@ section {
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-areas: "tabs form";
+  grid-gap: 5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -211,7 +216,7 @@ section {
 .prize__form--heading {
   color: #fff;
   padding: 4.4rem 2rem;
-  background: #A2BAD4;
+  background-color: #D99278;
 }
 
 .prize__form--heading h4 {
@@ -301,4 +306,64 @@ section {
   .authors__content {
     grid-template-columns: 1fr;
   }
+}
+
+.controllers {
+  display: flex;
+}
+
+.controllers > div:not(:last-child) {
+  margin-left: 10px;
+}
+
+.btnrounded {
+  background: #fff;
+  position: relative;
+  padding: 0 25px;
+  border: 1px solid var(--grey-border);
+  text-align: center;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  line-height: 38px;
+}
+
+.btnrounded:hover {
+  color: #fff;
+}
+
+.btncircle {
+  background: #fff;
+  position: relative;
+  border: 1px solid var(--grey-border);
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  width: 38px;
+  height: 38px;
+}
+
+.btncircle svg {
+  transition: all 300ms ease-in-out;
+  transform: scale(0.4);
+}
+
+.btncircle:hover svg {
+  color: #fff;
+}
+
+.prev .btncircle {
+  transform: rotate(180deg);
+}
+
+.btnrounded:hover,
+.btncircle:hover {
+  background-color: var(--primary);
 }

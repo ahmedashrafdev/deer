@@ -50,7 +50,7 @@ export default {
   },
 
   getters: {
-    testemonilas: (state) => state.testemonilas,
+    testemonials: (state) => state.testemonials,
   },
   mutations: {},
   actions: {},

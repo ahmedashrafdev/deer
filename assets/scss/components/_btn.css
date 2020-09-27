@@ -1,6 +1,6 @@
 .btn-text {
   display: flex;
-  width: 11rem;
+  width: 13rem;
   border-bottom: 1px solid var(--primary);
   padding: 3px;
   font-size: var(--font-size);
@@ -50,4 +50,23 @@
 .btn-apply:hover {
   background-color: #000;
   color: var(--primary);
+}
+
+.btnrounded {
+  background: #fff;
+  position: relative;
+  padding: 0 25px;
+  border: 1px solid var(--grey-border);
+  text-align: center;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.btnrounded:hover {
+  background-color: var(--primary);
+  color: #fff;
 }

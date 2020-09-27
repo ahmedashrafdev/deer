@@ -1,0 +1,247 @@
+.book {
+  direction: rtl;
+}
+
+@media screen and (max-width: 390px) {
+  .book {
+    padding: 0 10rem !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .book {
+    padding: 0 9rem !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .book {
+    padding: 0 8rem !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .book {
+    padding: 0 7rem !important;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .book {
+    padding: 0 5rem !important;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .book {
+    padding: 0 2rem !important;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .book {
+    padding: 0 0 !important;
+  }
+}
+
+.book__image {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  transition: all 300ms ease-in-out;
+}
+
+.book__image--wrapper {
+  position: relative;
+}
+
+.book__image .front {
+  transform-origin: left center 0;
+  transform-style: preserve-3d;
+  transition: all 300ms ease-in-out;
+  z-index: 2;
+}
+
+.book__image .front::before {
+  top: 0;
+  left: 0;
+  z-index: 3;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 8%, rgba(0, 0, 0, 0.1) 5%, rgba(0, 0, 0, 0) 13%);
+  transition: all 300ms ease-in-out;
+}
+
+.book__image .back {
+  top: .5%;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 99%;
+  overflow: hidden;
+  background: #000;
+  position: absolute;
+  transition: all 300ms ease-in-out;
+}
+
+.book__image .back::after {
+  top: 4%;
+  right: 3px;
+  z-index: 2;
+  width: 15px;
+  height: 92%;
+  content: '';
+  position: absolute;
+  background: url("http://exprostudio.com/html/book_library/images/books/bookpattren.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.book__image:hover {
+  padding: 9px 13px 9px 0;
+}
+
+.book__image:hover .front {
+  transform: perspective(1000px) rotateY(-20deg) rotateZ(0deg);
+}
+
+.book__image:hover .back {
+  transform: perspective(1000px) rotateY(-5deg) rotateZ(0deg);
+  left: 18px;
+}
+
+.book__details {
+  padding: 16px 10px 10px 10px;
+}
+
+.book__details .sale-lable {
+  margin: 0 0 8px;
+  min-height: 16px;
+}
+
+.book__details .sale-lable span {
+  color: #fff;
+  padding: 0 5px;
+  font-size: 10px;
+  line-height: 16px;
+  position: relative;
+  text-transform: uppercase;
+  border-radius: 0 4px 4px 0;
+  background-color: var(--primary);
+}
+
+.book__details .sale-lable span::before {
+  top: 0;
+  width: 0;
+  height: 0;
+  right: 100%;
+  content: '';
+  position: absolute;
+  border-right: 5px solid;
+  border-top: 10px solid transparent !important;
+  border-bottom: 10px solid transparent !important;
+  border-color: var(--primary);
+}
+
+.book__categories--list {
+  display: flex;
+  margin: 0 0 20px;
+  font-size: 13px;
+  line-height: 13px;
+  padding: 0 0 8px;
+  border-bottom: 1px solid var(--grey-border);
+}
+
+.book__categories--list li {
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.book__categories--list li:hover {
+  color: var(--primary);
+}
+
+.book__categories--list li:not(:last-child) {
+  margin-left: 0 10px;
+}
+
+.book__categories--list li:not(:last-child)::after {
+  content: " , ";
+  margin: 0 3px;
+}
+
+.book__title {
+  display: block;
+  padding: 0 0 20px;
+}
+
+.book__title a {
+  font-size: var(--font-size);
+  line-height: 1.8rem;
+  color: #000;
+  font-weight: 700;
+  padding-bottom: 1px;
+  display: block;
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.book__title a:hover {
+  color: var(--primary);
+  transform: translateY(-3px);
+}
+
+@media screen and (max-width: 940px) {
+  .book__title a {
+    font-size: 1.8rem;
+  }
+}
+
+.book__author {
+  padding: 1rem 0;
+}
+
+.book__author span {
+  font-size: 1.1rem;
+  line-height: 1,4rem;
+  font-weight: 400;
+  color: var(--grey-text-color);
+  text-transform: uppercase;
+}
+
+.book__author a {
+  color: var(--secondary);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  line-height: 1,4rem;
+  font-weight: 400;
+  transition: all 300ms ease-in-out;
+}
+
+.book__author a:hover {
+  color: var(--text-color);
+}
+
+.book__price {
+  margin-bottom: 20px;
+}
+
+.book__price ins {
+  color: var(--secondary);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.book__price .space {
+  margin: 0 3px;
+}
+
+.book__price del {
+  color: #666;
+  font-size: 13px;
+}
+
+.book__rate {
+  margin: 0 0 20px;
+}

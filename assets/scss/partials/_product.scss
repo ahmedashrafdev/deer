@@ -1,0 +1,280 @@
+.book {
+    direction: rtl;
+
+    @media screen and (max-width: 390px) {
+        padding: 0 10rem !important;
+    }
+
+    @media screen and (max-width: 380px) {
+        padding: 0 9rem !important;
+    }
+
+    @media screen and (max-width: 375px) {
+        padding: 0 8rem !important;
+    }
+
+    @media screen and (max-width: 350px) {
+        padding: 0 7rem !important;
+    }
+
+    @media screen and (max-width: 330px) {
+        padding: 0 5rem !important;
+    }
+
+    @media screen and (max-width: 310px) {
+        padding: 0 2rem !important;
+    }
+
+    @media screen and (max-width: 250px) {
+        padding: 0 0 !important;
+    }
+
+    &__image {
+        position: relative;
+        cursor: pointer;
+        width: 100%;
+        transition: all 300ms ease-in-out;
+
+        &--wrapper {
+            position: relative;
+        }
+
+        // box-shadow: 13px 13px 8px 0 rgba(151, 146, 153, 0.6);
+
+        & .front {
+            transform-origin: left center 0;
+            transform-style: preserve-3d;
+            transition: all 300ms ease-in-out;
+            z-index: 2;
+
+            &::before {
+                top: 0;
+                left: 0;
+                z-index: 3;
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background: linear-gradient(to right, rgba(0, 0, 0, 0) 8%, rgba(0, 0, 0, 0.1) 5%, rgba(0, 0, 0, 0) 13%);
+                transition: all 300ms ease-in-out;
+            }
+        }
+
+        & .back {
+            top: .5%;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 99%;
+            overflow: hidden;
+            background: #000;
+            position: absolute;
+            transition: all 300ms ease-in-out;
+
+            &::after {
+                top: 4%;
+                right: 3px;
+                z-index: 2;
+                width: 15px;
+                height: 92%;
+                content: '';
+                position: absolute;
+                background: url("http://exprostudio.com/html/book_library/images/books/bookpattren.png") no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+
+        &:hover {
+            padding: 9px 13px 9px 0;
+
+            & .front {
+                transform: perspective(1000px) rotateY(-20deg) rotateZ(0deg);
+            }
+
+            & .back {
+                transform: perspective(1000px) rotateY(-5deg) rotateZ(0deg);
+                left: 18px;
+            }
+        }
+
+        // @media screen and (max-width: 940px) {
+        //     height: 40.5rem;
+        // }
+
+        // @media screen and (max-width: 900px) {
+        //     height: 38.5rem;
+        // }
+
+        // @media screen and (max-width: 720px) {
+        //     height: 36.5rem;
+        // }
+
+        // @media screen and (max-width: 690px) {
+        //     height: 33.5rem;
+        // }
+
+        // @media screen and (max-width: 560px) {
+        //     height: 47.5rem;
+        // }
+
+        // @media screen and (max-width: 530px) {
+        //     height: 41.5rem;
+        // }
+
+        // @media screen and (max-width: 500px) {
+        //     height: 39.5rem;
+        // }
+
+        // @media screen and (max-width: 450px) {
+        //     height: 35.5rem;
+        // }
+
+        // @media screen and (max-width: 420px) {
+        //     height: 31.5rem;
+        // }
+
+        // @media screen and (max-width: 390px) {
+        //     height: 40.5rem;
+        // }
+
+        // @media screen and (max-width: 220px) {
+        //     height: 30.5rem;
+        // }
+   
+    }
+
+    &__details {
+        padding: 16px 10px 10px 10px;
+
+        & .sale-lable {
+            margin: 0 0 8px;
+            min-height: 16px;
+
+            & span {
+                color: #fff;
+                padding: 0 5px;
+                font-size: 10px;
+                line-height: 16px;
+                position: relative;
+                text-transform: uppercase;
+                border-radius: 0 4px 4px 0;
+                background-color: var(--primary);
+
+                &::before {
+                    top: 0;
+                    width: 0;
+                    height: 0;
+                    right: 100%;
+                    content: '';
+                    position: absolute;
+                    border-right: 5px solid;
+                    border-top: 10px solid transparent !important;
+                    border-bottom: 10px solid transparent !important;
+                    border-color: var(--primary);
+                }
+            }
+        }
+    }
+
+    &__categories {
+        &--list {
+            display: flex;
+            margin: 0 0 20px;
+            font-size: 13px;
+            line-height: 13px;
+            padding: 0 0 8px;
+            border-bottom: 1px solid var(--grey-border);
+
+            & li {
+                cursor: pointer;
+                transition: all 300ms ease-in-out;
+
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+
+            & li:not(:last-child) {
+                margin-left: 0 10px;
+
+                &::after {
+                    content: " , ";
+                    margin: 0 3px;
+                }
+            }
+        }
+    }
+
+    &__title {
+        display: block;
+        padding: 0 0 20px;
+
+        & a {
+            font-size: var(--font-size);
+            line-height: 1.8rem;
+            color: #000;
+            font-weight: 700;
+            padding-bottom: 1px;
+            display: block;
+            cursor: pointer;
+            transition: transform 1s;
+
+            &:hover {
+                color: var(--primary);
+                transform: translateY(-3px);
+            }
+
+            @media screen and (max-width: 940px) {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    &__author {
+        padding: 1rem 0;
+
+        & span {
+            font-size: 1.1rem;
+            line-height: 1,4rem;
+            font-weight: 400;
+            color: var(--grey-text-color);
+            text-transform: uppercase;
+        }
+
+        & a {
+            color: var(--secondary);
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            line-height: 1,4rem;
+            font-weight: 400;
+            transition: all 300ms ease-in-out;
+
+            &:hover {
+                color: var(--text-color);
+            }
+        }
+    }
+
+    &__price {
+        margin-bottom: 20px;
+
+        & ins {
+            color: var(--secondary);
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        & .space {
+            margin: 0 3px;
+        }
+
+        & del {
+            color: #666;
+            font-size: 13px;
+        }
+    }
+
+    &__rate {
+        margin: 0 0 20px;
+    }
+}

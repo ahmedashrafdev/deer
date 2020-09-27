@@ -7,6 +7,7 @@ import ui from './modules/ui.js'
 import slider from './modules/slider.js'
 import categories from './modules/categories.js'
 import user from './modules/user.js'
+import staticHtml from './modules/staticHtml.js'
 
 const createStore = () => {
   return new Vuex.Store({
@@ -19,6 +20,7 @@ const createStore = () => {
       slider,
       categories,
       user,
+      staticHtml,
     },
   })
 }

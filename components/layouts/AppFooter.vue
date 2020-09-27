@@ -3,11 +3,15 @@
     <footer class="footer">
       <div class="container">
         <div class="content">
-          <div class="about animated" data-animation="zoomIn">
+          <div
+            v-lazyload
+            class="about animate__animated invisible"
+            data-animation="zoomIn"
+          >
             <div class="about__header">
               <h4 class="white-header">{{ $t('about_deer') }}</h4>
             </div>
-            <div class="about__content">
+            <div class="about__footer">
               <p class="normmalP">
                 ليست مجرد دار نشر تتبنى أي موهبة حقيقية، وإنما هي شركة توزيع
                 لكافة دور النشر العربية. معنا، سيصل كتابك إلى كل مكتبة، وكل
@@ -34,7 +38,11 @@
               </ul>
             </div>
           </div>
-          <div class="links animated" data-animation="zoomIn">
+          <div
+            v-lazyload
+            class="links animate__animated invisible"
+            data-animation="zoomIn"
+          >
             <div class="links__content">
               <div class="links__header">
                 <h4 class="white-header">{{ $t('useful_links') }}</h4>
@@ -77,7 +85,11 @@
               </ul>
             </div>
           </div>
-          <div class="gallery animated" data-animation="zoomIn">
+          <div
+            v-lazyload
+            class="gallery animate__animated invisible"
+            data-animation="zoomIn"
+          >
             <div class="gallery__header">
               <h4 class="white-header">{{ $t('deer_gallery') }}</h4>
             </div>
@@ -87,14 +99,18 @@
                 :key="index"
                 class="gallery__images--imagebox hover-2"
               >
-                <img
-                  src="@/assets/images/load.gif"
-                  :data-src="image.src"
-                  :alt="image.alt"
+                <lazyImage
+                  data-animation="pulse"
+                  class="animate__animated invisible"
+                  :source="image.src"
+                  :alt="image.seo"
                 />
                 <div class="overlay small">
                   <span class="vline top"></span>
-                  <span class="vline bottom"></span>
+                  <span
+                    class="vline bottom"
+                    style="background: transparent; right: auto; left: 5px"
+                  ></span>
                 </div>
               </div>
             </div>
@@ -107,7 +123,11 @@
         </div>
       </div>
     </footer>
-    <div class="bottom animated" data-animation="fadeInUp">
+    <div
+      v-lazyload
+      class="bottom animate__animated invisible"
+      data-animation="fadeInUp"
+    >
       <div class="container">
         <div class="bottom__content">
           <div class="copyright">
@@ -139,6 +159,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 @import '../../assets/scss/layout/_footer.min.css';
 </style>

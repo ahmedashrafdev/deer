@@ -1,0 +1,93 @@
+.wrapper:not(:last-child) {
+  padding: 0 2rem;
+}
+
+.testemonial {
+  background: #f7fbff;
+  position: relative;
+  padding: 4.5rem 4rem 4.3rem 4rem;
+  box-shadow: 5px 5px 20px -8px rgba(157, 172, 193, 0.25);
+}
+
+.testemonial__content {
+  display: flex;
+}
+
+@media (max-width: 400px) {
+  .testemonial__content {
+    display: block;
+  }
+}
+
+.testemonial__left {
+  margin-right: 3rem;
+}
+
+@media (max-width: 400px) {
+  .testemonial__avatar {
+    text-align: center;
+  }
+}
+
+.testemonial__avatar a {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+@media (max-width: 400px) {
+  .testemonial__avatar a {
+    margin-bottom: 10px;
+  }
+}
+
+.testemonial__avatar a img {
+  width: 100%;
+}
+
+.testemonial .socails__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.testemonial .socails__list li a svg {
+  transform: scale(0.6);
+  margin-left: -5px;
+}
+
+.testemonial__info {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 400px) {
+  .testemonial__info {
+    display: block;
+  }
+}
+
+.testemonial__name {
+  font-size: 2.6rem;
+  color: var(--text-color-dark);
+  font-weight: 700;
+  margin-right: 3rem;
+}
+
+.testemonial__title {
+  font-weight: 700;
+  font-size: var(--font-size);
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.testemonial blockquote {
+  font-size: var(--font-size);
+  padding-right: 2rem;
+  color: var(--text-color);
+  font-weight: 400;
+}

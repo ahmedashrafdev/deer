@@ -1,0 +1,124 @@
+#featured-book {
+    background: url(http://tawbahinstitute.com/design/images/register/bg-register.png) right bottom no-repeat;
+    position: relative;
+    padding: 100px 0 130px;
+    background-color: #A1BBD4;
+
+    @media screen and (max-width: 768px) {
+        background-image: none;
+    }
+}
+
+.featured {
+    display: grid;
+    grid-template-columns: 33% 50% 17%;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 940px) {
+        grid-template-columns: 33% 40% 27%;
+    }
+
+    @media (max-width: 720px) {
+        grid-template-columns: 33% 35% 32%;
+    }
+
+    @media (max-width: 640px) {
+        grid-template-columns: 1fr;
+    }
+
+    &__image {
+        @media (max-width: 640px) {
+            padding: 1rem 20rem;
+        }
+
+        @media (max-width: 500px) {
+            padding: 1rem 10rem;
+        }
+    }
+
+    &__details {
+        & .title {
+            padding: 0 0 20px 50px;
+
+            @media (max-width: 640px) {
+                text-align: center;
+            }
+
+            & h3 {
+                font-size: 40px;
+                font-weight: bold;
+                line-height: 43px;
+
+                @media (max-width: 940px) {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        & .author {
+            padding: 1rem 0;
+
+            @media (max-width: 640px) {
+                text-align: center;
+            }
+
+            & span {
+                font-size: 1.6rem;
+                line-height: 1,4rem;
+                font-weight: 400;
+                color: var(--grey-text-color);
+                text-transform: uppercase;
+            }
+
+            & a {
+                color: var(--secondary);
+                text-transform: uppercase;
+                font-size: 1.6rem;
+                line-height: 1,4rem;
+                font-weight: 400;
+                transition: all 300ms ease-in-out;
+
+                &:hover {
+                    color: var(--text-color);
+                }
+            }
+        }
+    }
+
+    &__rate {
+        @media (max-width: 640px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__price {
+        & .price {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: 640px) {
+                text-align: center;
+            }
+        }
+
+        & ins {
+            color: var(--secondary);
+            font-size: 40px;
+            text-decoration: none;
+        }
+
+        & .space {
+            margin: 0 3px;
+        }
+
+        & del {
+            color: #666;
+            font-size: 26px;
+        }
+    }
+}

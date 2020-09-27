@@ -33,12 +33,7 @@ html body .slides {
 }
 
 html body .contacts__item .phone-icon {
-  transform: rotate(250deg) scale(0.5) !important;
-}
-
-html body .vline.bottom {
-  left: 20px;
-  right: auto;
+  transform: rotate(250deg) scale(0.5);
 }
 
 html body .vline.top {
@@ -90,4 +85,17 @@ html body .release__content {
 html body .search-box__icon {
   left: 0;
   right: auto;
+}
+
+html body .overlay.small .bottom {
+  right: auto !important;
+  left: 5px !important;
+}
+
+html body .gallery__images img {
+  height: 100% !important;
+}
+
+html body .vue-star-rating-rating-text {
+  display: none !important;
 }

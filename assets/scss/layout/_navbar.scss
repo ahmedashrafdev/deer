@@ -45,6 +45,10 @@ header.header {
         // grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "nav logo icons";
     }
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .logobox {
@@ -248,6 +252,11 @@ nav.mainnav {
         font-weight: 300;
         color: var(--text-color);
         cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            transform: rotate(90deg);
+        }
     }
 }
 
@@ -355,6 +364,11 @@ nav.mainnav {
             font-size: 5rem;
             color: #fff;
             cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                transform: rotate(90deg);
+            }
         }
 
         &__item {

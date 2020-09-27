@@ -54,6 +54,12 @@ header.header.mini svg {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .logobox {
   grid-area: logo;
   width: 8rem;
@@ -263,6 +269,11 @@ nav.mainnav {
   font-weight: 300;
   color: var(--text-color);
   cursor: pointer;
+  transition: .3s;
+}
+
+.search-box__close:hover {
+  transform: rotate(90deg);
 }
 
 @media screen and (max-width: 940px) {
@@ -348,6 +359,10 @@ nav.mainnav {
     font-size: 5rem;
     color: #fff;
     cursor: pointer;
+    transition: .3s;
+  }
+  .nav__close:hover {
+    transform: rotate(90deg);
   }
   .nav__item {
     margin: 1rem;

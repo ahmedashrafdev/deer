@@ -21,9 +21,9 @@
   visibility: visible;
 }
 
-@FONT-FACE {
-  font-family: "DroidKufi-Regular";
-  src: url("./fonts/DroidKufi-Regular.ttf");
+@font-face {
+  font-family: 'DroidKufi-Regular';
+  src: url('./fonts/DroidKufi-Regular.ttf');
 }
 
 *,
@@ -76,7 +76,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'DroidKufi-Regular',sans-serif !important;
+  font-family: 'DroidKufi-Regular', sans-serif !important;
   font-size: var(--fon-size);
   -webkit-font-smoothing: antialiased;
   line-height: 1.167;
@@ -100,7 +100,12 @@ svg {
   fill: var(--text-color);
 }
 
-input[type="email"], input[type="password"], input[type="tel"], input[type="text"], select, textarea {
+input[type='email'],
+input[type='password'],
+input[type='tel'],
+input[type='text'],
+select,
+textarea {
   outline: 0;
   border: none;
   height: 38px;
@@ -133,7 +138,7 @@ input:focus {
   text-align: center;
   font-weight: 400 !important;
   cursor: pointer;
-  transition: background-color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .controllers.slidecontroller span:hover {
@@ -168,7 +173,7 @@ input:focus {
   text-align: center;
   font-weight: 400 !important;
   cursor: pointer;
-  transition: background-color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .controllers.slidecontroller-book span:hover {
@@ -203,7 +208,7 @@ input:focus {
   text-align: center;
   font-weight: 400 !important;
   cursor: pointer;
-  transition: background-color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .controllers.slidecontroller-testemonial span:hover {
@@ -252,7 +257,7 @@ input:focus {
 }
 
 .main-header {
-  font-family: "Poppins",sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 3rem;
   line-height: 3rem;
   color: var(--dark-text-color);
@@ -277,7 +282,7 @@ input:focus {
 
 .section-header {
   margin-bottom: 3.7rem;
-  font-family: "Poppins",sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 3rem;
   font-weight: bold;
 }
@@ -304,7 +309,7 @@ input:focus {
 }
 
 .hover-2:hover .overlay {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .hover-2:hover .vline.top::after {
@@ -331,7 +336,7 @@ input:focus {
   left: 0;
   top: 0;
   position: absolute;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .overlay.small .top {
@@ -349,10 +354,11 @@ input:focus {
   z-index: 9;
   height: calc(50% - 20px);
   width: calc(50% - 20px);
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
-.vline::before, .vline::after {
+.vline::before,
+.vline::after {
   content: '';
   background: #fff;
   display: block;
@@ -433,7 +439,7 @@ p {
   border-bottom: 1px solid var(--primary);
   padding: 3px;
   font-size: var(--font-size);
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
 .btn-text:hover {
@@ -441,7 +447,7 @@ p {
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
 .btn-text:hover svg {
@@ -489,7 +495,8 @@ html body .about__info .btn-text svg {
   transform: rotate(180deg) scale(0.7);
 }
 
-html body span#prev, html body span#next {
+html body span#prev,
+html body span#next {
   font-weight: bold !important;
 }
 
