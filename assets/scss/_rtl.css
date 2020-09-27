@@ -33,7 +33,7 @@ html body .slides {
 }
 
 html body .contacts__item .phone-icon {
-  transform: rotate(250deg) scale(0.5);
+  transform: rotate(250deg) scale(1);
 }
 
 html body .vline.top {

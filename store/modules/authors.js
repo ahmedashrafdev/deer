@@ -5,34 +5,34 @@ Vue.use(Vuex)
 const state = {
   featured: [
     {
-      name: 'mai ahmed',
-      title: 'Economist',
+      name: 'احمد هاني',
+      title: 'طبيب نفسي',
       image:
         'https://image.freepik.com/free-photo/smiling-young-pretty-woman-looking-camera-touching-face_1262-15253.jpg',
       description:
-        'Lobortis arcu, a vestibulum augue. Vivamus ipsum neque, facilisis vel mollis vitae.',
+        'يواي دولوريم ايبسأديبايسكاي فيلايت, سيد        كيواي نون نيومكيوام ايايوس موداي تيمبورا ',
       facebook: 'www.facebook.com',
       twitter: 'www.twitter.com',
       instagram: 'www.instagram.com',
     },
     {
-      name: 'Sherif Saed',
-      title: 'Economist',
+      name: 'محمود احمد',
+      title: 'كاتب',
       image:
         'https://image.freepik.com/free-photo/cheerful-businessman-enjoying-success_1262-16166.jpg',
       description:
-        'Lobortis arcu, a vestibulum augue. Vivamus ipsum neque, facilisis vel mollis vitae.',
+        ' كيوايرات فوليوبتس نوستريوم أكسيركايتاشيم                      كونسيكيواتشر؟',
       facebook: 'www.facebook.com',
       twitter: 'www.twitter.com',
       instagram: 'www.instagram.com',
     },
     {
-      name: 'sherif ellithy',
-      title: 'Economist',
+      name: 'احمد مراد',
+      title: 'شاعر',
       image:
         'https://image.freepik.com/free-photo/young-businessman-holding-digital-tablet-hand-checking-time_23-2148190736.jpg',
       description:
-        'Lobortis arcu, a vestibulum augue. Vivamus ipsum neque, facilisis vel mollis vitae.',
+        ' أت فيرو ايوس ايتايموس ديوكايميوس كيواي        بلاندايتاييس برايسينتايوم فوليوبتاتيوم               سيما يليكيوسيونت ',
       facebook: 'www.facebook.com',
       twitter: 'www.twitter.com',
       instagram: 'www.instagram.com',

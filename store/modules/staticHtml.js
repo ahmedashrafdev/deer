@@ -19,7 +19,7 @@ export default {
       },
     ],
     aboutContent:
-      '<p class="normalP">In 1792 the Counter Hill Academy opened its doors in New Cross, ina house built by Deptford distiller, William Goodhew. The RoyalNaval School then bought the site, building what is now ourRichard Hoggart Building in 1843.</p><p class="normalP special publico-font">A transformational experience that will shape your unique profile and help you launch your professional career.</p><p class="normalP">With the dawn of the twentieth century, the Company handed overthe Institute to the University of London. It was re-christenedGoldsmiths College and the modern era of Goldsmiths had begun.</p>',
+      '<p class="normalP">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت نيولا باراياتيور لابوريوم.</p><p class="normalP special publico-font"> سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم  دولاريمكيو لايودانتيوم,توتام ريم أبيرأم,أيكيو أبسا كيواي أب أللو أنفينتوري فيرأتاتيس ايت</p><p class="normalP">     ,أديبايسكاي فيلايت, سيدكيواي نون نيومكيوام ايايوس موداي تيمبورا انكايديونت يوت لابوري أيت دولار ماجنامألايكيوام كيوايرات فوليوبتاتيم. يوت اينايم أد مينيما فينيام, كيواس نوستريوم أكسيركايتاشيميلامكوربوريس سيوسكايبيت لابورايوسام, نايساي يوت ألايكيوايد أكس أيا كومودايفوليوبتاس نيولا باراياتيور؟</p>',
   },
 
   getters: {

@@ -47,6 +47,10 @@
   margin-bottom: 2rem;
 }
 
+.contacts .icon-wrapper {
+  width: 80px;
+}
+
 .contacts__item {
   transition: all 0.3s ease-in-out;
   display: flex;
@@ -67,7 +71,7 @@
 }
 
 .contacts__item:first-child svg {
-  transform: scale(1.5);
+  transform: scale(1);
 }
 
 .contacts__item svg {

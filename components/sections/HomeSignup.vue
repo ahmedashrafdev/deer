@@ -16,16 +16,9 @@
                 />
               </div>
               <p class="text">
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex
+                أتديبايسكاي فيلايت, سيدكيواي نون نيومكيوام ايايوس موداي تيمبورا
+                انكايديونت يوت لابوري أيت دولار ماجنامألايكيوام كيوايرات
+                فوليوبتاتيم. يوت اينايم أد مينيما فينيام, كيوا
               </p>
               <h6 class="title mg-bottom-25">
                 <a>{{ $t('register_now') }}</a>
@@ -38,15 +31,9 @@
                 src="http://tawbahinstitute.com/design/images/logo/logo.png"
               />
               <p class="text">
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex
+                أت فيرو ايوس ايت أكيوساميوس ايت أيوستو أودايو دايجنايسسايموس
+                ديوكايميوس كيواي بلاندايتاييس برايسينتايوم فوليوبتاتيوم
+                ديلينايتاي أتكيوي كورريوبتاي كيوأوس دولوريس أيت سيما يليكيوسيونت
               </p>
               <h6 class="title mg-bottom-25">
                 <a href="http://arabic.esolve-eg.com/register">{{
@@ -61,17 +48,9 @@
                 src="http://tawbahinstitute.com/design/images/logo/logo.png"
               />
               <p class="text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex
+                يواي دولوريم ايبسأديبايسكاي فيلايت, سيد كيواي نون نيومكيوام
+                ايايوس موداي تيمبوريواي دولوريم ايبسأديبايسكاي فيلايت, سيد كيواي
+                نون نيومكيوام ايايوس موداي تيمبور
               </p>
               <h6 class="title mg-bottom-25">
                 <a href="http://arabic.esolve-eg.com/register">{{

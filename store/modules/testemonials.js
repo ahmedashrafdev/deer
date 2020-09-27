@@ -8,7 +8,7 @@ export default {
         image:
           'http://themesflat.com/html/bookflare/images/testimonials/avata-index-2.png',
         content:
-          'Best Rate helped our business increase incoming cash flows. Since it supports a vast number of cryptocurrencies and fiat money options, it’s impossible to not like it',
+          'سيكيواي نيسكايونت. نيكيو بوررو كيوايسكيوم          ايست,كيواي دولوريم ايبسيوم كيوا دولايركايتاشيم                    يلامكوربوريس سيوسكايبيت لابورايوسام, نايساي يوت ألايكيوايد أكس أيا كوموداي',
         facebook: 'www.facebook.com',
         twitter: 'www.twitter.com',
         instagram: 'www.instagram.com',
@@ -19,7 +19,7 @@ export default {
         image:
           'http://themesflat.com/html/bookflare/images/testimonials/avata-index-2.png',
         content:
-          'Best Rate helped our business increase incoming cash flows. Since it supports a vast number of cryptocurrencies and fiat money options, it’s impossible to not like it',
+          'لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور     فوليوبتاتي',
         facebook: 'www.facebook.com',
         twitter: 'www.twitter.com',
         instagram: 'www.instagram.com',
@@ -30,7 +30,7 @@ export default {
         image:
           'http://themesflat.com/html/bookflare/images/testimonials/avata-index-2.png',
         content:
-          'Best Rate helped our business increase incoming cash flows. Since it supports a vast number of cryptocurrencies and fiat money options, it’s impossible to not like it',
+          'سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم          أودايت أيوت فيوجايت',
         facebook: 'www.facebook.com',
         twitter: 'www.twitter.com',
         instagram: 'www.instagram.com',
@@ -41,7 +41,7 @@ export default {
         image:
           'http://themesflat.com/html/bookflare/images/testimonials/avata-index-2.png',
         content:
-          'Best Rate helped our business increase incoming cash flows. Since it supports a vast number of cryptocurrencies and fiat money options, it’s impossible to not like it',
+          'كيواي دولوريم ايبسيوم كيوا دولار سايت أميت, كونسيكتيتيور,أديبايسكاي فيلايت, سيد        ',
         facebook: 'www.facebook.com',
         twitter: 'www.twitter.com',
         instagram: 'www.instagram.com',

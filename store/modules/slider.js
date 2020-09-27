@@ -3,13 +3,15 @@ export default {
   state: {
     slides: [
       {
-        src:
-          'https://image.freepik.com/free-photo/woman-reading-near-wall_23-2147797511.jpg',
+        src: 'https://deerpublishing.b-cdn.net/slide-1.jpg',
         caption: 'home.slides.slide1',
       },
       {
-        src:
-          'https://image.freepik.com/free-photo/woman-reading-near-wall_23-2147797511.jpg',
+        src: 'https://deerpublishing.b-cdn.net/slide-2.jpg',
+        caption: 'home.slides.slide2',
+      },
+      {
+        src: 'https://deerpublishing.b-cdn.net/slide-3.jpg',
         caption: 'home.slides.slide2',
       },
     ],

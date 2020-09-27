@@ -42,12 +42,8 @@ header.header {
     grid-template-areas: "logo nav icons";
 
     @media screen and (max-width: 940px) {
-        // grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: "nav logo icons";
-    }
-
-    @media screen and (max-width: 768px) {
         grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "nav logo icons";
     }
 }
 
@@ -179,6 +175,41 @@ nav.mainnav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    @media (max-width: 1200px) {
+        justify-content: center;
+    }
+
+    & .icon-wrapper {
+        width: 40px;
+
+        &:not(:last-child) {
+            margin-left: 5px;
+        }
+
+        &.person-icon {
+            transform: scale(0.7);
+        }
+
+        &.cart-icon {
+            position: relative;
+
+            & .cart-count {
+                width: 20px;
+                height: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--primary);
+                position: absolute;
+                top: -5px;
+                left: -9px;
+                color: #fff;
+                font-size: 10px;
+                border-radius: 50%;
+            }
+        }
+    }
 
     &__search {
         margin-inline-end: 2rem;

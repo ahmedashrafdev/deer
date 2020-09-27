@@ -2,10 +2,18 @@
   <section id="featured-book" class="">
     <div class="container">
       <div class="featured">
-        <div class="featured__image">
+        <div
+          v-lazyload
+          class="animate__animated invisible featured__image"
+          data-animation="fadeInRight"
+        >
           <lazyImage :source="featuredBook.image" :alt="featuredBook.name" />
         </div>
-        <div class="featured__details">
+        <div
+          v-lazyload
+          class="animate__animated invisible featured__details"
+          data-animation="fadeInUp"
+        >
           <div class="title">
             <h3>
               <nuxt-link to="">
@@ -29,7 +37,11 @@
             />
           </div>
         </div>
-        <div class="featured__price">
+        <div
+          v-lazyload
+          class="animate__animated featured__price invisible featured__details"
+          data-animation="fadeInLeft"
+        >
           <div class="price">
             <ins> LE35</ins>
             <span class="space"></span>

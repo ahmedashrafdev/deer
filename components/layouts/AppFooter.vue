@@ -21,19 +21,30 @@
             <div class="contacts">
               <ul class="contacts__list">
                 <li class="contacts__item">
-                  <AdressIcon />
+                  <div class="icon-wrapper">
+                    <AdressIcon />
+                  </div>
                   <span class="contacts__content">
                     عمارات الوادي رقم 2 ِ المنطقه ( 11 ) الحي الثامنِ ِ مدينه
                     نصر‎ Cairo, Cairo Governorate, Egypt
                   </span>
                 </li>
                 <li class="contacts__item">
-                  <phone-icon class="phone-icon" />
+                  <div class="icon-wrapper">
+                    <phone-icon
+                      class="phone-icon"
+                      style="transform: rotate(250deg) scale(1) !important"
+                    />
+                  </div>
                   <span class="contacts__content"> 01010106268</span>
                 </li>
                 <li class="contacts__item">
-                  <email-icon />
-                  <span class="contacts__content"> info@deer.com </span>
+                  <div class="icon-wrapper">
+                    <email-icon />
+                  </div>
+                  <span class="contacts__content">
+                    info@deerpublishing.com
+                  </span>
                 </li>
               </ul>
             </div>

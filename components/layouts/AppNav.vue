@@ -41,7 +41,9 @@
           <span class="nav__close" @click="toggleNav">&times;</span>
         </nav>
         <div class="icons">
-          <search-icon class="icons__search" @click="toggleSearch" />
+          <div class="icon-wrapper">
+            <search-icon class="icons__search" @click="toggleSearch" />
+          </div>
           <div class="search-box">
             <form action="#" class="search-box__form">
               <input
@@ -56,6 +58,13 @@
               >&times;</strong
             >
           </div>
+          <div class="icon-wrapper cart-icon">
+            <cart-icon />
+            <span class="cart-count"> 1 </span>
+          </div>
+          <div class="icon-wrapper person-icon">
+            <person-icon />
+          </div>
         </div>
       </div>
     </div>
@@ -63,11 +72,15 @@
 </template>
 
 <script>
+import CartIcon from '@/assets/icons/add-to-cart.svg?inline'
+import PersonIcon from '@/assets/icons/person.svg?inline'
 import SearchIcon from '@/assets/icons/search.svg?inline'
 export default {
   name: 'AppNavBar',
   components: {
-    'search-icon': SearchIcon,
+    SearchIcon,
+    CartIcon,
+    PersonIcon,
   },
   methods: {
     toggleSearch: () => {
