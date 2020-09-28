@@ -3,7 +3,7 @@
     <nuxt-link :to="{ name: 'release', params: { img: product.image } }">
       <div class="book__image">
         <div class="book__image--wrapper">
-          <div class="front">
+          <div class="front" style="position: relative">
             <lazyImage :source="product.image" :alt="product.name" />
           </div>
           <div class="back">

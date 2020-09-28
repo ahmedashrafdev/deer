@@ -30,10 +30,8 @@ export default {
   mounted() {
     setTimeout(() => {
       const loading = document.querySelector('.loading-screen')
-
       loading.classList.add('hidden')
-      document.getElementsByTagName('body').style.overflow = 'hidden'
-    }, 10000)
+    }, 15000)
   },
 }
 </script>

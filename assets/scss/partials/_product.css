@@ -60,6 +60,7 @@
   transform-style: preserve-3d;
   transition: all 300ms ease-in-out;
   z-index: 2;
+  position: relative;
 }
 
 .book__image .front::before {
@@ -84,6 +85,10 @@
   background: #000;
   position: absolute;
   transition: all 300ms ease-in-out;
+}
+
+.book__image .back img {
+  width: 100%;
 }
 
 .book__image .back::after {

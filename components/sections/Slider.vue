@@ -3,10 +3,7 @@
     <agile
       :nav-buttons="false"
       :dots="false"
-      :autoplay-speed="5000"
-      :speed="3500"
       :pause-on-hover="false"
-      autoplay
       class="sliders"
     >
       <div

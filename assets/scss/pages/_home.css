@@ -353,6 +353,7 @@ section {
 .btncircle svg {
   transition: all 300ms ease-in-out;
   transform: scale(0.4);
+  width: 100%;
 }
 
 .btncircle:hover svg {

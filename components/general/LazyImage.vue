@@ -33,9 +33,9 @@ export default {
 
 .image__wrapper.loaded .image__spinner {
   display: none;
-  width: 100%;
 }
 .image__item {
   width: 100%;
+  height: auto;
 }
 </style>

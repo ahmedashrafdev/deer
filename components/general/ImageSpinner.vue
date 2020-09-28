@@ -1,43 +1,25 @@
 <template>
-  <div class="ripple">
-    <div class="ripple__circle"></div>
-    <div class="ripple__circle ripple__inner-circle"></div>
-  </div>
+  <div class="loader"></div>
 </template>
 
 <style scoped>
-.ripple {
-  display: inline-block;
-  position: absolute;
-  width: 64px;
-  height: 64px;
-}
-.ripple__circle {
-  position: absolute;
-  border: 4px solid var(--color-primary);
-  opacity: 1;
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid var(--primary);
   border-radius: 50%;
-  animation: ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
 }
 
-.ripple__inner-circle {
-  animation-delay: -0.5s;
-}
-
-@keyframes ripple {
+@keyframes spin {
   0% {
-    top: 28px;
-    left: 28px;
-    width: 0;
-    height: 0;
-    opacity: 1;
+    transform: rotate(0deg);
   }
   100% {
-    top: -1px;
-    left: -1px;
-    width: 58px;
-    height: 58px;
-    opacity: 0;
+    transform: rotate(360deg);
   }
 }
 </style>
